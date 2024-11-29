@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* outline: 4px solid green !important; */
 }
 
 body {
@@ -513,15 +514,29 @@ th {
 }
 
 @media screen and (width >= 375px) and (width <= 767px) {
-  .logo {
-    padding: 14px 0 14px 15px;
-  }
-
   .section_for_page_main {
     flex-direction: column;
     padding: 0px;
     gap: 0px;
   }
+
+  .logo {
+    padding: 14px 0 14px 15px;
+  }
+
+  .list_header {
+    /* padding: 28px 15px 28px 0; */
+    padding: 28px 0px 28px 0;
+    gap: 10px;
+    min-width: auto;
+  }
+
+  /* .list_header_li_create_account {
+    padding: 28px 0px 28px 0;
+  } */
+  /* .li_href_create_account {
+    margin: 0;
+  } */
 
   .main_text {
     padding: 60px 15px;
