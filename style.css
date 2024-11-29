@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  min-width: 375px;
+}
+
 .header {
   background-color: #0a61f7;
 }
@@ -250,7 +254,7 @@ th {
 
   color: #95a1bb;
 
-  width: 500px;
+  min-width: 500px;
   height: 144px;
 }
 
@@ -271,11 +275,12 @@ th {
   display: flex;
 
   flex-direction: column;
+  max-width: 480px;
 }
 
 .full_name {
-  width: 480px;
-  height: 50px;
+  max-width: 480px;
+  min-height: 50px;
 }
 
 .basic_forms_section_3 {
@@ -309,8 +314,8 @@ th {
 .password,
 .date_of_birth,
 .country {
-  width: 230px;
-  height: 50px;
+  min-width: 230px;
+  min-height: 50px;
 }
 
 .full_name::placeholder,
@@ -360,9 +365,10 @@ th {
   color: #95a1bb;
   border: 1px solid #95a1bb;
   border-radius: 4px;
-  width: 480px;
-  height: 90px;
+  max-width: 480px;
+  min-height: 90px;
   margin-bottom: 20px;
+  /* padding: 20px; */
 }
 
 .text_Favorite_Technologies {
@@ -390,8 +396,8 @@ th {
 
   border: 1px solid #95a1bb;
   border-radius: 4px;
-  width: 480px;
-  height: 80px;
+  max-width: 480px;
+  min-height: 80px;
   resize: none;
   padding: 15px 0 0 15px;
   margin-bottom: 20px;
@@ -412,8 +418,8 @@ th {
   color: #fff;
   background: #0a61f7;
   border-radius: 4px;
-  width: 480px;
-  height: 51px;
+  min-width: 480px;
+  min-height: 51px;
   padding: 15px;
   border: none;
   margin-bottom: 100px;
@@ -436,4 +442,194 @@ th {
   min-width: 100vh;
   height: 60px;
   padding: 20px;
+}
+
+@media screen and (width >= 768px) and (width <= 1024px) {
+  .logo {
+    padding: 14px 0 14px 16px;
+  }
+
+  .list_header {
+    padding: 28px 15px 28px 0;
+  }
+
+  .section_for_page_main {
+    flex-direction: column;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .main_text {
+    padding: 100px 0 80px 15px;
+  }
+
+  .main_images {
+    padding: 0 56px;
+  }
+
+  .h2_section_table {
+    padding: 100px 0 20px 0;
+  }
+
+  .section_for_page_table {
+    padding: 0;
+  }
+
+  .p_section_table {
+    padding-bottom: 40px;
+  }
+  .table_2 {
+    overflow: auto;
+    /* scrollbar-width: thin; */
+  }
+
+  .table {
+    margin: 0px 0px 100px 15px;
+  }
+
+  .section_for_page {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .section_three_left_part {
+    margin: 100px 15px 70px;
+  }
+
+  .h2-section_create_account {
+    margin-top: 0px;
+    margin-bottom: 55px;
+  }
+
+  .footer_span {
+    min-width: 0vh;
+    text-align: center;
+  }
+
+  .form_section_three {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (width >= 375px) and (width <= 767px) {
+  .logo {
+    padding: 14px 0 14px 15px;
+  }
+
+  .section_for_page_main {
+    flex-direction: column;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .main_text {
+    padding: 60px 15px;
+  }
+
+  .h1_main {
+    font-size: 52px;
+    /* margin-bottom: 30px; */
+  }
+
+  .main_images {
+    padding: 15px;
+  }
+
+  .main_images > img {
+    max-width: 345px;
+    max-height: 342px;
+  }
+  .h2_section_table {
+    padding: 100px 0 20px;
+  }
+
+  .section_for_page_table {
+    padding: 0;
+  }
+  .p_section_table {
+    margin: 20px 0 40px 15px;
+    padding: 0;
+  }
+
+  .table_2 {
+    overflow: auto;
+    /* scrollbar-width: thin; */
+  }
+
+  .table {
+    margin: 0px 0px 100px 15px;
+  }
+
+  .section_for_page {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .h2-section_create_account {
+    margin: 100px 0 50px 15px;
+  }
+
+  .section_three_left_part {
+    margin: 0;
+  }
+
+  .p-section-create-account {
+    margin: 0 15px 40px 15px;
+    min-width: 345px;
+  }
+
+  .list-section-create-account {
+    margin-bottom: 60px;
+    padding-left: 15px;
+  }
+
+  .email,
+  .password,
+  .date_of_birth,
+  .country {
+    min-width: 345px;
+    margin: 20px 0 0 0;
+  }
+  .full_name {
+    max-width: 345px;
+  }
+
+  .favorite_technologies_section_3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 345px;
+    min-height: 137px;
+  }
+
+  .section_3_CSS,
+  .section_3_React {
+    padding: 0px 0 0 30px;
+  }
+
+  .section_3_HTML {
+    padding: 0px 0 0 15px;
+  }
+
+  .section_3_Styled_components {
+    padding: 20px 0 30px 15px;
+  }
+
+  .text_area_section_3 {
+    max-width: 345px;
+    /* max-height: 80px; */
+  }
+
+  .button_registration {
+    min-width: 345px;
+    min-height: 51px;
+  }
+  .form_section_three {
+    margin-left: 15px;
+  }
+
+  .footer_span {
+    min-width: 0vh;
+  }
 }
